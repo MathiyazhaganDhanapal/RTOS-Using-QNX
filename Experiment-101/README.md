@@ -1,24 +1,22 @@
-# Experiment-101 : Hello World Application on QNX: VMware Virtual Machine and Raspberry Pi
+# Experiment-101
+Hello World Application on QNX: VMware Virtual Machine and Raspberry Pi
 
----
-
-## Objective  
+## Objective: 
 To create, build, and execute a simple “Hello World” program in QNX on two targets:  
 1) QNX running inside a VMware virtual machine  
 2) QNX running on Raspberry Pi hardware
 
----
+## Hardware Requirements:
+Computer With QNX Software
 
-## Hardware Requirements  
-
-### For VMware Setup
+### For VMware Setup:
 - Host PC / Laptop (Intel/AMD processor)
 - Minimum 8 GB RAM recommended
 - Ethernet or Wi-Fi network interface
 - VMware Workstation / VMware Player
 - QNX Neutrino image configured for x86_64 virtual machine
 
-### For Raspberry Pi Setup
+### For Raspberry Pi Setup:
 - Raspberry Pi board (Model 3 / 4 recommended)
 - MicroSD card with QNX image flashed
 - Power adapter for Raspberry Pi
@@ -27,9 +25,7 @@ To create, build, and execute a simple “Hello World” program in QNX on two t
 - Ethernet cable or Wi-Fi connection
 - Host PC running QNX Momentics IDE
 
----
-
-## Software / Tools Required  
+## Software / Tools Required:
 
 - QNX Momentics IDE (installed on host machine)
 - QNX Neutrino RTOS images for:
@@ -39,24 +35,24 @@ To create, build, and execute a simple “Hello World” program in QNX on two t
 - Target connection through:
   - Network (preferred) **or**
   - Serial console
+## Program (hello.c):
 
----
-
-## Program (hello.c)
-
-```c
+```
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
-    printf("Hello, World from QNX!\n");
-    return 0;
+	puts("Hello, World from QNX! ");
+	puts("Name : MATHIYAZHAGAN.D");
+	puts("Register Number : 212223050028");
+	return EXIT_SUCCESS;
 }
+
 ```
-## Output
+## Output:
 
----
+<img width="1420" height="311" alt="Screenshot 2026-03-13 103631" src="https://github.com/user-attachments/assets/d5ce66bd-7ecb-48c0-9c47-d7080a011c18" />
 
-## Result
+## Result:
+
 Thus, a simple Hello World application was successfully developed, compiled, and executed on the QNX operating system using both VMware virtual machine and Raspberry Pi hardware targets.
-
----
