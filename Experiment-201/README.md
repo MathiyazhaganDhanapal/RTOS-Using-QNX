@@ -1,26 +1,21 @@
-# Experiment 201: Process Creation using fork() in QNX
+# Experiment 201
+Process Creation using fork() in QNX
 
 ## Aim
 
 Write a program to implement **process creation using fork() in QNX/Linux** and observe the behavior of **parent and child processes** when the parent terminates.
-
----
 
 ## Objective
 
 * To understand **process creation using fork()**.
 * To observe the **difference between parent and child processes**.
 * To demonstrate how **child processes continue execution after the parent exits**.
-
----
-
+  
 ## Problem Statement
 
 Write a program that **creates multiple child processes using fork()**.
 Each child process should print its **PID and parent PID**.
 The parent process should **terminate after 5 seconds**, and the child processes should print their **PID and new parent PID after the parent exits**.
-
----
 
 # Algorithm
 
@@ -49,11 +44,9 @@ The parent process should **terminate after 5 seconds**, and the child processes
 11. Terminate the parent process.
 12. End the program.
 
----
-
 # Program
 
-```c
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -103,12 +96,9 @@ int main(void)
     exit(EXIT_SUCCESS);
 }
 ```
-
----
-
 # Expected Output
 
-```text
+```
 Parent started. PID = 1200
 Child 1 started. PID = 1201, Parent PID = 1200
 Child 2 started. PID = 1202, Parent PID = 1200
@@ -119,14 +109,9 @@ Child 1 running after parent exit. My PID = 1201, New Parent PID = 1
 Child 2 running after parent exit. My PID = 1202, New Parent PID = 1
 Child 3 running after parent exit. My PID = 1203, New Parent PID = 1
 ```
-
-*(After the parent exits, the child processes are adopted by the **init process (PID 1)**.)*
-
----
-
 # Ouput
 
----
+<img width="1422" height="303" alt="image" src="https://github.com/user-attachments/assets/3a142773-0af2-421d-9ad5-9837ad85d966" />
 
 # Result
 
