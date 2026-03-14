@@ -1,4 +1,5 @@
-# Experiment 301: Message Passing between Client and Server in QNX
+# Experiment 301:
+Message Passing between Client and Server in QNX
 
 ## Aim
 
@@ -231,9 +232,15 @@ MsgSend return status: 0
 
 ---
 
-# Output
+# Output:
 
----
+## Server.c
+
+<img width="1419" height="263" alt="Image" src="https://github.com/user-attachments/assets/177e7396-9db0-4322-863e-8f6004231822" />
+
+## Client.c:
+
+<img width="1424" height="257" alt="Image" src="https://github.com/user-attachments/assets/d908b7a2-ee55-42e3-bee7-a9d4a8a6f661" />
 
 # Result
 
