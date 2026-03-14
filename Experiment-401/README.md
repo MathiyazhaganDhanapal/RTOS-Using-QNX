@@ -1,4 +1,6 @@
-# Experiment 401: Interrupt Handling with Counter in QNX
+# Experiment 401
+
+Interrupt Handling with Counter in QNX
 
 ## Aim
 
@@ -102,6 +104,9 @@ Interrupt received! , Count is 4
 *(The counter increases each time the interrupt occurs.)*
 
 ---
+# Output:
+
+<img width="1420" height="337" alt="Image" src="https://github.com/user-attachments/assets/bcc3afd6-78d1-41fa-909e-ba2e348f8f84" />
 
 # Result
 
